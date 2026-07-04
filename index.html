@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>AmirSite</title>
+    <meta name="viewport"
+content="width=device-width,
+initial-scale=1.0">
+    <style>
+    body{background-color:black;}
+    h1{
+    color:red;
+    font-size:37px;
+    text-align:center;}
+    p{
+    color:white;
+    font-size:30px;
+    text-align:right;}
+    div{text-align:center}
+    input{font-size:25px;}
+    button{font-size:25px;}
+    h2{text-align:center;
+    color:white;
+    font-size:35px;
+}
+    body{
+margin:0;
+width:100vw;
+min-height:100vh;
+background-color:black;}
+    </style>
+</head>
+<body>
+    <div>
+    <br>
+    <h1>🎂کیکینو</h1>
+    <img <img src="index.jpg" width=320>
+
+    <h2>😄به سایت مون خوش اومدی</h2>
+    </div>
+    <div>
+    <p>:😃اسمت چیه؟؟-</p>
+    <input id="name" placeholder="😄مثلا امیر">
+    <br>
+    <p>😁😁چند سالته؟-</p>
+    <input id="age" placeholder="😄مثلا 16">
+    <br>
+    <br>
+    <button id="next">😇ثبت</button>
+    </div>
+<script>
+    document.getElementById("next").onclick= function(){
+    let userName=document.getElementById("name").value;
+    let  age=Number(document.getElementById("age").value);
+
+        if(age>=15){
+            alert("سلام " + userName + "😇 به سایت کیکینو خوش اومدی")
+        }else if(age<=14){
+           alert("سلام " + userName + "😒 یکم دیگه مونده تا بزرگ شی عمویی");
+}
+};
+</script>
+</body>
+</html>
